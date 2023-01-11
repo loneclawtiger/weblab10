@@ -1,0 +1,79 @@
+body {
+    background-color: #282828;
+    font-family: Dubai;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-sect {
+    background-color: #4f80ff;
+    width: 90%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.top-sect .nav-title h2 {
+    color: white;
+}
+
+.top-sect .nav-options {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.top-sect .nav-options .nav-links {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.top-sect .nav-options .nav-links:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+
+.top-sect .nav-options .nav-links:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+.mid-sect{
+    margin-top: 10em;
+}
+
+.card {
+    height: 200px;
+    padding: 20px 50px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+table td, th{
+    padding: 20px;
+    width: 14.28%;
+    text-align: center;
+    color: white;
+
+}
